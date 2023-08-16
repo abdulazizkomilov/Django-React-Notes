@@ -18,8 +18,6 @@ DEBUG = False
 ALLOWED_HOSTS = ['i-notes.up.railway.app', '127.0.0.1']
 
 
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
