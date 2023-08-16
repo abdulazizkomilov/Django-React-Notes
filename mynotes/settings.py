@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-iciqweur=hp(xnyau)ev9d0@t)4orp)js8=t8qayvib05if0+3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['icloud-notes.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['icloud-notes.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',  
+    'whitenoise.runserver_nostatic',
 
     'api.apps.ApiConfig',
 
@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://icloud-notes.up.railway.app',
-    'http://icloud-notes.up.railway.app',
+    'https://icloud-notes.onrender.com',
+    'http://icloud-notes.onrender.com',
     'http://127:0.0.1:8000',
 ]
 
@@ -148,8 +148,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
-
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
 # Default primary key field type
