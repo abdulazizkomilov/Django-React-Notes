@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-iciqweur=hp(xnyau)ev9d0@t)4orp)js8=t8qayvib05if0+3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['icloud-notes.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['i-notes.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -36,8 +36,8 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://icloud-notes.onrender.com',
-    'http://icloud-notes.onrender.com',
+    'https://i-notes.up.railway.app',
+    'http://i-notes.up.railway.app',
     'http://127:0.0.1:8000',
 ]
 
