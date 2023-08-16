@@ -41,10 +41,15 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127:0.0.1:8000',
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ]
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'zhnM4Rerl0nXbFKPXxnC',
+        'HOST': 'containers-us-west-117.railway.app',
+        'PORT': '6317',
+    }
 }
 
 MIDDLEWARE = [
