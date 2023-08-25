@@ -1,4 +1,3 @@
-import dj_database_url
 import os
 from pathlib import Path
 
@@ -15,7 +14,7 @@ SECRET_KEY = 'django-insecure-iciqweur=hp(xnyau)ev9d0@t)4orp)js8=t8qayvib05if0+3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['i-notes.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['cloud-notes.up.railway.app', '127.0.0.1']
 
 
 INSTALLED_APPS = [
@@ -34,8 +33,8 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://i-notes.up.railway.app',
-    'http://i-notes.up.railway.app',
+    'https://cloud-notes.up.railway.app',
+    'http://cloud-notes.up.railway.app',
     'http://127:0.0.1:8000',
 ]
 
@@ -44,9 +43,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'zhnM4Rerl0nXbFKPXxnC',
-        'HOST': 'containers-us-west-117.railway.app',
-        'PORT': '6317',
+        'PASSWORD': '7d1XPrIHBfhS9KTn2Zyb',
+        'HOST': 'containers-us-west-148.railway.app',
+        'PORT': '6501',
     }
 }
 
@@ -84,18 +83,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mynotes.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default='postgres://abdulaziz:FsMKrHns3OVAZO37mQJQRfo7FDQsy1Wr@dpg-cjecqsrbq8nc73d2chtg-a/dbblog_qezn',
-        conn_max_age=600
-    )
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
