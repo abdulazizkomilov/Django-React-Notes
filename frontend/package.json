@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://i-notes.up.railway.app/",
+  "proxy": "https://cloud-notes.up.railway.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
