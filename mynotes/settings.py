@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-iciqweur=hp(xnyau)ev9d0@t)4orp)js8=t8qayvib05if0+3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cloud-notes.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['notesicloud.up.railway.app']
 
 
 INSTALLED_APPS = [
@@ -33,9 +33,7 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://cloud-notes.up.railway.app',
-    'http://cloud-notes.up.railway.app',
-    'http://127:0.0.1:8000',
+    'https://notesicloud.up.railway.app',
 ]
 
 DATABASES = {
